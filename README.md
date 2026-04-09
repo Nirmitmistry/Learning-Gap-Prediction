@@ -2,7 +2,7 @@
 
 This repository contains an end-to-end machine learning pipeline designed to predict student outcomes—specifically classifying whether a student is likely to **Graduate**, **Dropout**, or remain **Enrolled**. By identifying at-risk students early, educational institutions can intervene and provide targeted support to close the learning gap.
 
-## 📊 Dataset
+## Dataset
 
 The project uses a dataset consisting of **4,424 records and 35 initial features**. The target variable (`Target`) consists of three classes:
 - **Graduate** (~49.9%)
@@ -15,7 +15,7 @@ Features are categorized into four main buckets:
 - **Financial:** Debtor status, tuition fee status, scholarship holder.
 - **Macroeconomic:** Unemployment rate, inflation rate, GDP.
 
-## 🛠️ Project Pipeline
+## Project Pipeline
 
 The workflow is broken down into three main Jupyter notebooks:
 
@@ -41,7 +41,7 @@ The workflow is broken down into three main Jupyter notebooks:
 - **Models Evaluated:** Logistic Regression, Random Forest, XGBoost, and LightGBM.
 - **Explainability:** Employs **SHAP** for global and local interpretability.
 
-## 🚀 Results & Performance
+##  Results & Performance
 
 The models were optimized for `f1_macro` with a soft recall floor (≥ 0.85) to ensure at-risk students are reliably identified. 
 
@@ -57,19 +57,3 @@ The models were optimized for `f1_macro` with a soft recall floor (≥ 0.85) to 
 3. `Tuition fees up to date`
 4. `Age at enrollment`
 
-## 📦 Requirements
-
-While the `requirements.txt` is omitted/empty in the current branch, the following core libraries are required to run the notebooks:
-
-```text
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-xgboost
-lightgbm
-optuna
-imbalanced-learn
-shap
-joblib
