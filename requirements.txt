@@ -3,6 +3,7 @@ pandas
 scikit-learn
 imbalanced-learn
 xgboost
+lightgbm
 optuna
 joblib
 matplotlib
